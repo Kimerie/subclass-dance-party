@@ -1,7 +1,7 @@
 describe("blinkyDancer", function() {
 
   var blinkyDancer;
-  var timeBetweenSteps = 100;
+  var timeBetweenSteps = 1000;
   var clock;
 
   beforeEach(function() {
@@ -23,9 +23,9 @@ describe("blinkyDancer", function() {
   describe("dance", function(){
     it("should call step at least once per second", function(){
       sinon.spy(blinkyDancer, "step");
+      blinkyDancer = BlinkyDancer(10, 20, timeBetweenSteps);
       expect(blinkyDancer.step.callCount).to.be.equal(0);
-    blinkyDancer = BlinkyDancer(10, 20, timeBetweenSteps);
-      clock.tick(timeBetweenSteps);
+      //clock.tick(timeBetweenSteps);
 
       expect(blinkyDancer.step.callCount).to.be.equal(1);
 
