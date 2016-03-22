@@ -8,11 +8,11 @@ var BreakDancer = function(top, left, timeBetweenSteps){
 
   BreakDancer.prototype.step = function(){
     Dancer.prototype.step.call(this);
-    this.$node.slideDown(200);
+    this.$node.slideDown();
     };
 
   BreakDancer.prototype.setPosition = function(top, left){
-    this.$node = $('<span class ="breakDancer"></span>');
+    this.$node = $('<span class ="breakDancer"><img src="src/breakdancer.gif"></span>');
     var styleSettings = {
       top: top,
       left: left

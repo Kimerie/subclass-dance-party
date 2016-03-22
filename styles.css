@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url('http://ian-albert.com/games/super_mario_bros_maps/mario-underground-end.gif');
+  background-size: cover;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -26,7 +27,13 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .breakDancer{
-  border:20px solid red;
-  border-radius: 20px;
+/*  border:20px solid red;
+  border-radius: 20px;*/
+  position: absolute;
+}
+
+.fireWalker{
+/*  border:20px solid red;
+  border-radius: 20px;*/
   position: absolute;
 }
