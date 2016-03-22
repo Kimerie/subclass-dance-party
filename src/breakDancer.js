@@ -20,3 +20,10 @@ var BreakDancer = function(top, left, timeBetweenSteps){
     this.$node.css(styleSettings);
   };
 
+  BreakDancer.prototype.lineUp = function(){
+    for(var i = 0; i < window.dancers.length; i++){
+      if(window.dancers.length < 0){
+        console.log(window.dancers[i])
+      };
+    };
+  };

@@ -35,7 +35,7 @@ Dancer.prototype.setPosition = function(top, left){
 
   this.$node.css(styleSettings);
   // this.$node.css({"top" : top, "left" : left})
-console.log(this.$node.css(styleSettings))
+// console.log(this.$node.css(styleSettings)
 };
 
   // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
