@@ -31,5 +31,14 @@ $(document).ready(function(){
     console.log(window.dancers)
     $('body').append(dancer.$node);
   });
+  $(".lineup-button").on("click", function(){
+      console.log("clickty click")
+    for(var i = 0; i < window.dancers.length; i++){
+      if(window.dancers.length > 0){
+        console.log("props", window.dancers[i].setPosition)
+
+      };
+    };
+  });
 });
 
